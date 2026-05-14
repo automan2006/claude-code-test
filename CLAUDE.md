@@ -33,5 +33,18 @@ Then open `http://localhost:8080/<filename>.html` in a browser.
 
 ## Git workflow
 
-- Commit and push after each meaningful change
-- Remote: `https://github.com/automan2006/claude-code-test`
+After every meaningful change (feature added, bug fixed, file created or significantly refactored):
+
+1. Stage and commit with a clean, descriptive message:
+   ```
+   git add <files>
+   git commit -m "concise description of what changed and why"
+   ```
+2. Push immediately so nothing is lost:
+   ```
+   git push
+   ```
+
+Remote: `https://github.com/automan2006/claude-code-test`
+
+This ensures every working state is saved and recoverable. Do not batch unrelated changes into one commit.
